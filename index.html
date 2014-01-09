@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Skills Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    
+    <style>
+    
+    
+    	* {
+    		margin:0;
+    		padding:0;
+    		box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+  			-webkit-box-sizing: border-box;
+    	
+    	}
+    	
+    	html {
+    		margin: 0;
+    		padding: 0;
+    		width:100%;
+    	}
+    	
+    	
+    	body {
+    		padding: 0;
+            color: white;
+    		margin-top: 0;
+    		margin-bottom: 0;
+    		font-size:12px;
+    		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+    		
+    	}
+
+    	
+ .phone {
+    display: none;
+    line-height: 36px;
+    text-indent: 18px;
+    color: #494949;
+    border-top: 1px solid #131313;
+ }       	
+
+ .information {
+    display: none;
+    background-color: #484848;
+    color: #aaaaaa;
+    height: 101px;
+    width: 169px;
+    line-height: 20px;
+    text-indent: 22px;
+    padding-top: 10px;
+    border-top: 1px solid #131313;
+ }          
+
+ .email {
+    display: none;
+    line-height: 36px;
+    text-indent: 18px;
+    color: #494949;
+    border-top: 1px solid #131313;
+ }          
+
+
+.name {
+    line-height: 24px;
+    height: 37px;
+    text-indent: 43px;
+    border-top: 1px solid #131313;
+    border-right: 1px solid #131313;    
+}
+
+.name:hover, .information:hover {
+    background-color: #484848;
+}
+
+
+
+li {
+    list-style: none;
+}
+
+.light {
+    background-color: #212121;
+}
+
+.dark {
+    background-color: #1a1a1a;
+}
+
+.blue {
+    color: #13c8ce;
+}
+
+.gradient
+{
+height:397px;
+background: -webkit-linear-gradient(#333,black); /* For Safari */
+background: -o-linear-gradient(#333,black); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#333,black); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#333,black); /* Standard syntax (must be last) */
+border-radius: 15px;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    left: 19px;
+    top: 23px;
+
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+
+.active {
+    background-color: #00ff1e;
+}
+
+.inactive {
+    background-color: #ff0000;
+}
+
+.idle {
+    background-color: #c3c118;
+}
+
+
+</style>
+    
+    
+    
+</head>
+
+
+
+<body>
+
+
+    
+<div class="gradient" style="width: 280px; height:397px; border-radius:15px; background-color:black; position:relative;">
+        <div class="gradient">
+            <div class="title">Contacts</div>
+        </div>    
+    <div style="position:absolute; top:53px; width:110px; left:0px; border-top:1px solid black;">
+        <div class="name Christian light"> <div class="dot active"></div>Christian</div>
+        <div class="name Rich dark"> <div class="dot active"></div>Rich</div>
+        <div class="name Scott light"> <div class="dot active"></div>Scott</div>
+        <div class="name Danny dark"> <div class="dot active"></div>Danny</div>
+        <div class="name Taka light"> <div class="dot inactive"></div>Taka</div>
+        <div class="name Tim dark"> <div class="dot idle"></div>Tim</div>
+        <div class="name Patrick light"> <div class="dot active"></div>Patrick</div>
+        <div class="name Jacques dark"> <div class="dot idle"></div>Jacques</div>
+
+    </div>
+    <div style="width:170px; position:absolute; top:53px; left:110px;">
+        <div style="position:relative; top:0px;" class="information Christian">
+            <ul>
+                <li><span class="blue">christian@yahoo.com</span></li>
+                <li>323-555-1234</li>
+                <li>6539 Wilton Ave.</li>
+                <li>Culver City CA 90234</li>
+            </ul>
+        </div>
+        <div style="position:relative; top:38px;" class="information Rich">
+            <ul>
+                <li><span class="blue">rich@tripod.com</span></li>
+                <li>323-555-1234</li>
+                <li>6539 Wilton Ave.</li>
+                <li>Culver City CA 90234</li>
+            </ul>
+        </div>
+        <div style="position:relative; top:75px;" class="information Scott">
+            <ul>
+                <li><span class="blue">scott@mailinator.com</span></li>
+                <li>323-555-1234</li>
+                <li>6539 Wilton Ave.</li>
+                <li>Culver City CA 90234</li>
+            </ul>
+        </div>
+        <div style="position:relative; top:79px;"class="information Danny">
+            <ul>
+                <li><span class="blue">danny@hotmail.com</span></li>
+                <li>323-555-1234</li>
+                <li>6539 Wilton Ave.</li>
+                <li>Culver City CA 90234</li>
+            </ul>
+        </div>
+        <div style="position:relative; top:118px;" class="information Taka">
+            <ul>
+                <li><span class="blue">taka@myspace.com</span></li>
+                <li>323-555-1234</li>
+                <li>6539 Wilton Ave.</li>
+                <li>Culver City CA 90234</li>
+            </ul>
+        </div>
+        <div style="position:relative; top:153px;"class="information Tim">
+            <ul>
+                <li><span class="blue">tim@netscape.com</span></li>
+                <li>323-555-1234</li>
+                <li>6539 Wilton Ave.</li>
+                <li>Culver City CA 90234</li>
+            </ul>
+        </div>
+        <div style="position:relative; top:190px;"class="information Patrick">
+            <ul>
+                <li><span class="blue">patrick@live.com</span></li>
+                <li>323-555-1234</li>
+                <li>6539 Wilton Ave.</li>
+                <li>Culver City CA 90234</li>
+            </ul>
+        </div>
+        <div style="position:relative; top:196px;"class="information Jacques">
+            <ul>
+                <li><span class="blue">jacques@aol.com</span></li>
+                <li>323-555-1234</li>
+                <li>6539 Wilton Ave.</li>
+                <li>Culver City CA 90234</li>
+            </ul>
+        </div>        
+
+
+    </div>    
+    <div style="width:170px; position:absolute; top:53px; left:110px;" class="phone">
+        <ul>
+            <li class="phone light">323-555-1234</li>
+            <li class="phone dark">323-555-1234</li>
+            <li class="phone light">323-555-1234</li>
+            <li class="phone dark">323-555-1234</li>
+            <li class="phone light">323-555-1234</li>
+            <li class="phone dark">323-555-1234</li>
+            <li class="phone light">323-555-1234</li>
+            <li class="phone dark">323-555-1234</li>
+
+        </ul>
+    </div> 
+    <div style="width:170px; position:absolute; top:53px; left:110px; z-index:999;" class="email">
+        <ul>
+            <li class="email light">christian@yahoo.com</li>
+            <li class="email dark">rich@tripod.com</li>
+            <li class="email light">scott@mailinator.com</li>
+            <li class="email dark">danny@hotmail.com</li>
+            <li class="email light">taka@myspace.com</li>
+            <li class="email dark">tim@netscape.com</li>
+            <li class="email light">patrick@live.com</li>
+            <li class="email dark">jacques@aol.com</li>
+
+        </ul>
+    </div>   
+    <div style="position:absolute; left: 154px; top:366px;">
+        <select class="menu">
+            <option class="email">Email Address</option>
+            <option class="phone">Phone Number</option>
+        </select>
+    </div>
+</div>        
+
+
+
+
+</body>
+<script>
+$(function()
+{
+
+
+    $('.menu').change(function() {
+        $('.email').toggle();
+        $('.phone').show();
+    });
+
+    $('.Christian').mouseenter(function() {
+        $('.email').hide();
+        $('.phone').hide();
+        $('.Christian').show();
+
+    });
+
+    $('.Christian').mouseleave(function() {
+        $('.email').show();
+        $('.phone').show();
+        $('.information').hide();
+    });
+
+
+    $('.Rich').mouseenter(function() {
+        $('.email').hide();
+        $('.phone').hide();
+        $('.Rich').show();
+
+    });
+
+    $('.Rich').mouseleave(function() {
+        $('.email').show();
+        $('.phone').show();
+        $('.information').hide();
+    });
+
+
+    $('.Scott').mouseenter(function() {
+        $('.email').hide();
+        $('.phone').hide();
+        $('.Scott').show();
+
+    });
+
+    $('.Scott').mouseleave(function() {
+        $('.email').show();
+        $('.phone').show();
+        $('.information').hide();
+    });       
+
+    $('.Danny').mouseenter(function() {
+        $('.email').hide();
+        $('.phone').hide();
+        $('.Danny').show();
+
+    });
+
+    $('.Danny').mouseleave(function() {
+        $('.email').show();
+        $('.phone').show();
+        $('.information').hide();
+    });   
+
+    $('.Taka').mouseenter(function() {
+        $('.email').hide();
+        $('.phone').hide();
+        $('.Taka').show();
+
+    });
+
+    $('.Taka').mouseleave(function() {
+        $('.email').show();
+        $('.phone').show();
+        $('.information').hide();
+    }); 
+
+    $('.Tim').mouseenter(function() {
+        $('.email').hide();
+        $('.phone').hide();
+        $('.Tim').show();
+
+    });
+
+    $('.Tim').mouseleave(function() {
+        $('.email').show();
+        $('.phone').show();
+        $('.information').hide();
+    });     
+
+    $('.Patrick').mouseenter(function() {
+        $('.email').hide();
+        $('.phone').hide();
+        $('.Patrick').show();
+
+    });
+
+    $('.Patrick').mouseleave(function() {
+        $('.email').show();
+        $('.phone').show();
+        $('.information').hide();
+    }); 
+
+    $('.Jacques').mouseenter(function() {
+        $('.email').hide();
+        $('.phone').hide();
+        $('.Jacques').show();
+
+    });
+
+    $('.Jacques').mouseleave(function() {
+        $('.email').show();
+        $('.phone').show();
+        $('.information').hide();
+    }); 
+
+
+
+    $('.email').show();
+
+
+
+});
+</script>
+
+</html>
