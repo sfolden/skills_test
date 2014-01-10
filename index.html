@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Skills Test</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -80,16 +78,12 @@
     border-right: 1px solid #131313;    
 }
 
-.name:hover, .information:hover {
-    background-color: #484848;
-}
-
 
 
 li {
     list-style: none;
 }
-
+/* OLD CODE I CHANGED TO BE MORE EFFICIENT
 .light {
     background-color: #212121;
 }
@@ -97,6 +91,8 @@ li {
 .dark {
     background-color: #1a1a1a;
 }
+
+*/
 
 .blue {
     color: #13c8ce;
@@ -142,6 +138,18 @@ border-radius: 15px;
     background-color: #c3c118;
 }
 
+.phone:nth-child(even) {background: #1a1a1a}
+.phone:nth-child(odd) {background: #212121}
+
+.email:nth-child(even) {background: #1a1a1a}
+.email:nth-child(odd) {background: #212121}
+
+.name:nth-child(even) {background: #1a1a1a}
+.name:nth-child(odd) {background: #212121}
+
+.name:hover, .information:hover {
+    background-color: #484848;
+}
 
 </style>
     
@@ -160,14 +168,14 @@ border-radius: 15px;
             <div class="title">Contacts</div>
         </div>    
     <div style="position:absolute; top:53px; width:110px; left:0px; border-top:1px solid black;">
-        <div class="name Christian light"> <div class="dot active"></div>Christian</div>
-        <div class="name Rich dark"> <div class="dot active"></div>Rich</div>
-        <div class="name Scott light"> <div class="dot active"></div>Scott</div>
-        <div class="name Danny dark"> <div class="dot active"></div>Danny</div>
-        <div class="name Taka light"> <div class="dot inactive"></div>Taka</div>
-        <div class="name Tim dark"> <div class="dot idle"></div>Tim</div>
-        <div class="name Patrick light"> <div class="dot active"></div>Patrick</div>
-        <div class="name Jacques dark"> <div class="dot idle"></div>Jacques</div>
+        <div class="name Christian "> <div class="dot active"></div>Christian</div>
+        <div class="name Rich "> <div class="dot active"></div>Rich</div>
+        <div class="name Scott "> <div class="dot active"></div>Scott</div>
+        <div class="name Danny "> <div class="dot active"></div>Danny</div>
+        <div class="name Taka "> <div class="dot inactive"></div>Taka</div>
+        <div class="name Tim "> <div class="dot idle"></div>Tim</div>
+        <div class="name Patrick "> <div class="dot active"></div>Patrick</div>
+        <div class="name Jacques "> <div class="dot idle"></div>Jacques</div>
 
     </div>
     <div style="width:170px; position:absolute; top:53px; left:110px;">
@@ -240,27 +248,27 @@ border-radius: 15px;
     </div>    
     <div style="width:170px; position:absolute; top:53px; left:110px;" class="phone">
         <ul>
-            <li class="phone light">323-555-1234</li>
-            <li class="phone dark">323-555-1234</li>
-            <li class="phone light">323-555-1234</li>
-            <li class="phone dark">323-555-1234</li>
-            <li class="phone light">323-555-1234</li>
-            <li class="phone dark">323-555-1234</li>
-            <li class="phone light">323-555-1234</li>
-            <li class="phone dark">323-555-1234</li>
+            <li class="phone ">323-555-1234</li>
+            <li class="phone ">323-555-1234</li>
+            <li class="phone ">323-555-1234</li>
+            <li class="phone ">323-555-1234</li>
+            <li class="phone ">323-555-1234</li>
+            <li class="phone ">323-555-1234</li>
+            <li class="phone ">323-555-1234</li>
+            <li class="phone ">323-555-1234</li>
 
         </ul>
     </div> 
     <div style="width:170px; position:absolute; top:53px; left:110px; z-index:999;" class="email">
         <ul>
-            <li class="email light">christian@yahoo.com</li>
-            <li class="email dark">rich@tripod.com</li>
-            <li class="email light">scott@mailinator.com</li>
-            <li class="email dark">danny@hotmail.com</li>
-            <li class="email light">taka@myspace.com</li>
-            <li class="email dark">tim@netscape.com</li>
-            <li class="email light">patrick@live.com</li>
-            <li class="email dark">jacques@aol.com</li>
+            <li class="email ">christian@yahoo.com</li>
+            <li class="email ">rich@tripod.com</li>
+            <li class="email ">scott@mailinator.com</li>
+            <li class="email ">danny@hotmail.com</li>
+            <li class="email ">taka@myspace.com</li>
+            <li class="email ">tim@netscape.com</li>
+            <li class="email ">patrick@live.com</li>
+            <li class="email ">jacques@aol.com</li>
 
         </ul>
     </div>   
